@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Login Id</string>
+    <string name="enterlogin">Enter Login Id</string>
+    <string name="enterpass">Enter Password</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="version">Version</string>
+    <string name="dummyversion">1.0</string>
+    <string name="copyright">Mobien Technologies Pvt. Ltd. © 2012</string>
+</resources>

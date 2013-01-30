@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/devider1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="2dip"
+            android:layout_toRightOf="@id/btnMenu"/>
+
+        <ImageView
+            android:id="@+id/tvDialogHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dip"
+            android:contentDescription="@string/cd"
+            android:src="@drawable/logo_action_bar" />
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/rlMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_margin="15dip"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dip" >
+
+        <TextView
+            android:id="@+id/tvMessageHeader"
+            style="@style/White_Bold_16SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:text="@string/transactionerror" />
+
+        <TextView
+            android:id="@+id/tvMessageDetail"
+            style="@style/White_14SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMessageHeader"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/transactionerror" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlMessage"
+        android:layout_marginTop="5dip"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dip" >
+
+        <Button
+            android:id="@+id/btnYesOk"
+            style="@style/White_Bold_18SP"
+            android:layout_width="90dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/tvMessageDetail"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/ok" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNo"
+            style="@style/White_Bold_18SP"
+            android:layout_width="90dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/tvMessageDetail"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/btnYesOk"
+            android:text="@string/no"
+            android:visibility="gone" >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

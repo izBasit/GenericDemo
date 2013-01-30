@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AfterLoginActivity" >
+
+    <!-- HEADER STARTS -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/headerbg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/cd"
+            android:onClick="onBackClick"
+            android:src="@drawable/btn_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/cd"
+            android:src="@drawable/logo_action_bar" />
+
+<!--         <ImageView
+            android:id="@+personaldet/compHolidays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/cd"
+            android:onClick="onButtonClick"
+            android:src="@drawable/ic_action_holidays" /> -->
+    </RelativeLayout>
+<!-- HEADER ENDS -->
+
+<!--  Enter your Code from here!! :D ;) Have fun making the layout! :O :P -->
+</LinearLayout>

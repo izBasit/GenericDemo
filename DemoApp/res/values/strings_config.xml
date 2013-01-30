@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Web service Url = Local Ip of the webservices used -->
+    <string name="web_service_url">http://192.168.1.36/ApolloTyreService/ApolloTyre.asmx</string>
+    <!-- Alternate Web service Url = Static Ip of the webservices used -->
+    <string name="alternate_web_service_url">http://118.67.243.97/ApolloTyreService/ApolloTyre.asmx</string>
+    
+    <!-- Give a name to your database. -->
+    <string name="database_name">Database.db</string>
+    
+    <!-- Give package name of current project -->
+    <string name="database_path">/data/data/PACKAGE/databases/</string>
+    
+</resources>

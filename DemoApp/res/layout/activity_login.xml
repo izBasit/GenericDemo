@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <ImageView
+        android:id="@+login/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/cd"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+login/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+login/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/textboxsplash"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+login/et_loginId"
+            style="@style/White_18SP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:digits="0123456789"
+            android:ems="6"
+            android:hint="@string/enterlogin"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:paddingLeft="120dp"
+            android:paddingRight="10dp"
+            android:singleLine="true" >
+        </EditText>
+
+        <TextView
+            android:id="@+login/tv_pass"
+            style="@style/White_18SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+login/et_password"
+            android:layout_alignBottom="@+login/et_password"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+login/et_password"
+            style="@style/White_18SP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+login/et_loginId"
+            android:background="@android:color/transparent"
+            android:digits="0123456789"
+            android:ems="6"
+            android:hint="@string/enterpass"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:paddingLeft="120dp"
+            android:paddingRight="10dp"
+            android:password="true"
+            android:singleLine="true" >
+        </EditText>
+
+        <TextView
+            android:id="@+login/tv_login"
+            style="@style/White_18SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+login/et_loginId"
+            android:layout_alignBottom="@+login/et_loginId"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:text="@string/login" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+login/submit"
+        style="@style/White_18SP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+login/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="26dp"
+        android:onClick="onClick"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+login/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:text="@string/copyright"
+        android:textColor="@android:color/white" />
+
+<!--     <TextView
+        android:id="@+id/textView2"
+        style="@style/White_14SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+login/logo"
+        android:text="@string/version" />
+
+    <TextView
+        android:id="@+login/tvVersionName"
+        style="@style/White_14SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:text="@string/dummyversion" /> -->
+
+</RelativeLayout>
